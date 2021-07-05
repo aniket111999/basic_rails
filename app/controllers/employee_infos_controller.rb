@@ -1,6 +1,8 @@
 class EmployeeInfosController < ApplicationController
   before_action :set_employee_info, only: %i[ show edit update destroy ]
-
+  
+  def about
+  end
   # GET /employee_infos or /employee_infos.json
   def index
     @employee_infos = EmployeeInfo.all
